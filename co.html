@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>油耗計算機</title>
+</head>
+<body>
+        
+        請輸入上次加滿油後行駛的公里數：
+        <input type="text" value="100" class="num1">
+        <br>
+        請輸入你加滿的油幾公升：
+        <input type="text" value="20" class="num2">
+        <br>
+
+        <input type="button" class="btn"" value="計算結果">
+        <br>
+        你的車子每公升油可以行駛
+        <span class="total">5</span>公里。
+         <script>
+            var num1 = document.querySelector('.num1');
+            var num2 = document.querySelector('.num2');
+            var btn = document.querySelector('.btn');
+            var total = document.querySelector('.total');
+    
+            btn.addEventListener('click',function(){
+                var mile = parseInt(num1.value);
+                var gallon = parseInt(num2.value);
+             
+                var gpm = mile/gallon;
+                total.textContent = gpm;
+            })
+            
+          </script>
+</body>
+</html>
