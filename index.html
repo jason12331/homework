@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- <script>
+            //定義一個變數
+            //alert('abc');
+            var a = 1;
+            a = "QQ";
+            var b = 2;
+            var c = a+b;
+            var d = "彭捷";
+            var e = "9"*"9";
+            console.log(a+d);
+            console.log(typeof(b));
+            console.log(e);
+            console.log(a);
+
+    </script> -->
+</head>
+    <style>
+        h1{
+            color: red;
+        }
+    </style>
+<body>
+    <!-- <h1>1235</h1>
+    <h2>1234</h2>
+    <input type="text" value="CC" class="text">
+    <script>
+        document.querySelector('.text').value = "QQ";
+
+    </script> -->
+    <input type="text" value="1234" class="num1">
+    +
+    <input type="text" value="" class="num2">
+  
+      <input type="button" class="btn"" value="計算">
+    = 
+    <span class="total">1234</span>NT
+     <script>
+        var num1 = document.querySelector('.num1');
+        var num2 = document.querySelector('.num2');
+        var btn = document.querySelector('.btn');
+        var total = document.querySelector('.total');
+
+        btn.addEventListener('click',function(){
+            var num11 = parseInt(num1.value);
+            var num22 = parseInt(num2.value);
+            var totals = num11+num22;
+            total.textContent = totals;
+        })
+        
+      </script>
+    <!-- <script>
+    //函式，指令
+    var speak = '汪汪';
+    //指令 讓狗叫
+    function bark(){
+        console.log(speak);
+        console.log(speak);
+        console.log(speak);
+    }
+    bark();
+    //參數
+    // function total(a,b){
+    //     var b = 3;
+    //     console.log(b);
+    //     console.log(a+b);
+    // }
+    // total(2,3);
+    //console.log(b); //因為函式運算完就沒了
+   
+    </script> -->
+</body>
+</html>
